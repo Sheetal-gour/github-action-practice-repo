@@ -13,4 +13,4 @@ jobs:
           echo "Hello Sheetal"
       - name: printing github context
         run: |
-          echo ${{toJSON(gihub)}}
+          echo ${{toJSON(github)}}
