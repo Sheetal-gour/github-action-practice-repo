@@ -1,0 +1,14 @@
+name: workflow-practice-1
+on: [push]
+jobs:
+  job1:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checking out in git repository
+          uses: actions/checkout@v3
+        - name: Installing dependencies
+          run: npm ci
+        - name: Linting
+          run: npm run lint
+        - name: Testing scripts
+          run: npm run test
