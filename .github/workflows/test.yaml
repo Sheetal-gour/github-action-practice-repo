@@ -16,3 +16,8 @@ jobs:
           touch file.json
           echo "${{ toJSON(github) }}" >> file.json
           cat file.json
+      - name: saving github fil in artifact
+        uses: actions/upload-artifact@v3
+        with: 
+          name: github-artifacts-file
+          path: file.json
