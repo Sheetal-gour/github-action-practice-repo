@@ -13,4 +13,6 @@ jobs:
           echo "Hello Sheetal"
       - name: printing github context
         run: |
-          echo "${{ toJSON(github) }}"
+          touch file.json
+          echo "${{ toJSON(github) }}" >> file.json
+          cat file.json
