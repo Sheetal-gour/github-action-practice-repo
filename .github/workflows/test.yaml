@@ -1,7 +1,8 @@
 name: workflow-practice
 on:
   push:
-    feature-1
+    branches:
+      [ feature-1 ]
 jobs:
   job2:
     runs-on: ubuntu-latest
