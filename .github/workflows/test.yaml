@@ -1,7 +1,7 @@
 name: workflow-practice
 on:
-  issues:
-    types: [opened,edited,deleted]
+  push:
+    feature-1
 jobs:
   job2:
     runs-on: ubuntu-latest
